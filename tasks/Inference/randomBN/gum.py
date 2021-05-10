@@ -9,8 +9,8 @@ import pyAgrum as gum
 #    gum.saveBN(bn,f"data/bn{nbrnode}-{arcrate}.bif")
 
 nbrnode = int(sys.argv[1])
-arcrate = float(sys.argv[2])
-filename = f"data/bn{nbrnode}-{arcrate}.bif"
+arcrate = int(sys.argv[2])
+filename = f"data/bn{nbrnode}-0.{arcrate}.bif"
 bn = gum.loadBN(filename)
 
 ie=gum.LazyPropagation(bn)
